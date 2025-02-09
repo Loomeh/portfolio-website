@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Raleway } from 'next/font/google';
 import { JSX } from 'react';
 
-const raleway = Raleway({ weight: ['500'] });
+const raleway = Raleway({ weight: ['500'], subsets: ['latin'] });
 
 const navItems: { [label: string]: string } = {
   "Home": "/",

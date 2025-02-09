@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Raleway } from 'next/font/google'
 import { useState } from 'react' // Import useState for menu toggle
 
-const raleway = Raleway({ weight: ['500'] })
+const raleway = Raleway({ weight: ['500'], subsets: ['latin'] });
 
 const urls = {
     "Home": "/",
