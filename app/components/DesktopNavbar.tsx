@@ -1,16 +1,10 @@
 import Link from 'next/link';
 import { Raleway } from 'next/font/google';
 import { JSX } from 'react';
+import navItems from './navLinks';
 
 const raleway = Raleway({ weight: ['500'], subsets: ['latin'] });
 
-const navItems: { [label: string]: string } = {
-  "Home": "/",
-  "Programming Projects": "/programming_projects",
-  "Game Projects": "/game_projects",
-  "Extra": "/extra",
-  "Contact": "/contact",
-};
 
 export default function DesktopNavbar(): JSX.Element {
   return (

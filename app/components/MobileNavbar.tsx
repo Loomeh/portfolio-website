@@ -3,16 +3,10 @@
 import Link from 'next/link'
 import { Raleway } from 'next/font/google'
 import { useState } from 'react' // Import useState for menu toggle
+import navItems from './navLinks';
 
 const raleway = Raleway({ weight: ['500'], subsets: ['latin'] });
 
-const urls = {
-    "Home": "/",
-    "Programming Projects": "/programming_projects",
-    "Game Projects": "/game_projects",
-    "Extra": "/extra",
-    "Contact": "/contact"
-}
 
 export default function MobileNavbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false) // State to track menu open/closed
@@ -39,7 +33,7 @@ export default function MobileNavbar() {
 
                     {/* Desktop menu - hidden on mobile */}
                     <div className="hidden lg:flex">
-                        {Object.entries(urls).map(([name, url]) => (
+                        {Object.entries(navItems).map(([name, url]) => (
                             <Link 
                                 key={name} 
                                 href={url} 
@@ -54,7 +48,7 @@ export default function MobileNavbar() {
                 {/* Mobile menu - shown when isMenuOpen is true */}
                 <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
                     <div className="px-2 pt-2 pb-3 space-y-1 bg-[#292929]">
-                        {Object.entries(urls).map(([name, url]) => (
+                        {Object.entries(navItems).map(([name, url]) => (
                             <Link 
                                 key={name} 
                                 href={url} 
