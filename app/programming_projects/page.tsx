@@ -8,13 +8,13 @@ export default function ProgrammingProjects() {
       </div>
 
       <div className="text-xl text-[#bababa] py-4">
-        things i've made and released and am sort of proud of
+        things i&apos;ve made and released and am sort of proud of
       </div>
 
       <div className="flex flex-wrap gap-4 py-4">
         <ProjectCard
           title="beat revival"
-          description="mirror's edge catalyst server emulator project"
+          description="mirror&apos;s edge catalyst server emulator project"
           source="External"
           url="https://beatrevival.me"
         />

@@ -9,7 +9,7 @@ export default function Extra()
             </div>
 
             <div className="text-xl text-[#bababa] py-4">
-                small little (usually low effort) things i've made and dumped on the internet
+                small little (usually low effort) things i&apos;ve made and dumped on the internet
             </div>
 
             <div className="flex flex-wrap gap-4 py-4">
