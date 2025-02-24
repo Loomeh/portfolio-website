@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "loomeh", // Update with your actual title
-  description: "loomeh's stuff", // Update with your description
+  title: "loomeh",
+  description: "loomeh's stuff",
 };
 
 export default function RootLayout({
@@ -25,12 +25,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="loomeh" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-zinc-900 min-h-screen flex flex-col`}
       >
         <Navbar />
-        <main className="flex-grow">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 text-white max-w-7xl">
+        <main className="flex-grow w-full">
+          <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10 sm:py-14 text-white">
             {children}
           </div>
         </main>

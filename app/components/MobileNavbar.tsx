@@ -16,8 +16,7 @@ export default function MobileNavbar() {
             {/* Navbar container with sticky positioning */}
             <div className="sticky top-0 z-50 bg-[#292929]">
                 <div className="flex justify-between items-center px-4 py-4">
-                    {/* Logo or brand name could go here */}
-                    <div className="text-white text-xl">Logo</div>
+                    <div className="text-white text-xl">loomeh</div>
 
                     {/* Burger menu button - only visible on mobile */}
                     <button 
