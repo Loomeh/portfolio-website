@@ -26,7 +26,7 @@ function DisplayMusic() {
     };
 
     fetchSongData();
-    const intervalId = setInterval(fetchSongData, 1000);
+    const intervalId = setInterval(fetchSongData, 2000);
     return () => clearInterval(intervalId);
   }, []);
 
