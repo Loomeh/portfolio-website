@@ -21,7 +21,7 @@ async function getScrobbleData(): Promise<string[]> {
 
     const retArr: string[] = [result.song, result.artist, result.image, result.nowPlaying];
 
-    for(var i = 0; i < retArr.length; i++) {
+    for(let i = 0; i < retArr.length; i++) {
         retArr[i] = retArr[i].toLowerCase()
     }
 
