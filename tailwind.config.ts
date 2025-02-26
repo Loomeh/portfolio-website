@@ -63,12 +63,22 @@ export default {
                 sm: 'calc(var(--radius) - 4px)'
             },
             keyframes: {
+                fadeIn: {
+                    '0%': { opacity: '0' },
+                    '100%': { opacity: '1' }
+                },
+                fadeOut: {
+                    '0%': { opacity: '1' },
+                    '100%': { opacity: '0' }
+                },
                 fadeInBackground: {
                     '0%': { backgroundColor: 'black', color: 'white' },
                     '100%': { backgroundColor: 'white', color: 'black' }
                 }
             },
             animation: {
+                'fade-in': 'fadeIn 0.15s ease-in forwards',
+                'fade-out': 'fadeOut 0.15s ease-in forwards',
                 'fade-in-background': 'fadeInBackground 0.25s forwards'
             }
         }
